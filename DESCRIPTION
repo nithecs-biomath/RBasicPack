@@ -1,6 +1,8 @@
 Package: RBasicPack
 Title: R Package Basics: a minimal example
 Version: 0.0.0.9000
+URL: https://nithecs-biomath.github.io/RBasicPack, https://github.com/nithecs-biomath/RBasicPack
+BugReports: https://github.com/nithecs-biomath/RBasicPack/issues
 Authors@R: 
     person("Sandra", "MacFadyen", , "sandra.macfadyen@nithecs.ac.za", role = c("aut", "cre"))
 Description: A toy package to demonstrate GitHub, CI and Binder.

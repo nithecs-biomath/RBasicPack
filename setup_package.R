@@ -114,12 +114,30 @@ usethis::use_pkgdown()
 ## --- In your R console (or in an R script), run:
 usethis::use_vignette("getting-started")
 devtools::build_vignettes()
+## -------------------------------------------------------
 
 ## --- Static hosting with pkgdown + GitHub Pages
 ## --- If you just want a nicer documentation site (still not executable):
 
 ## >> Build site with pkgdown:
+# Install latest pkgdown if needed
+install.packages("pkgdown")
+
+# From the package root, in a fresh R session:
+devtools::install()                       # installs RBasicPack
+pkgdown::build_site(new_process = TRUE)   # builds docs in a new R process
+## -------------------------------------------------------
+
+# OR Manual install then build
+# 1. Install the package
+devtools::install()
+
+# 2. (Optionally restart R to unload any dev version)
+.rs.restartR()
+
+# 3. Build the site
 pkgdown::build_site()
+## -------------------------------------------------------
 
 ## >> Enable GitHub Pages from the docs/ folder.
 ## >> Readers browse your functions and vignettes at https://nithecs-biomath.github.io/RBasicPack/.
