@@ -1,0 +1,13 @@
+Package: RBasicPack
+Title: R Package Basics: a minimal example
+Version: 0.0.0.9000
+Authors@R: 
+    person("Sandra", "MacFadyen", , "sandra.macfadyen@nithecs.ac.za", role = c("aut", "cre"))
+Description: A toy package to demonstrate GitHub, CI and Binder.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
