@@ -100,3 +100,8 @@ hello("NITheCS Repo")
 ## >> There you can run the same install_github() or even
 ## >> devtools::load_all() and see your function work without installing anything locally.
 ## -------------------------------------------------------
+
+
+## --- When you’re done, you can Knit the document back to GitHub‐flavored Markdown
+## --- via the Knit button or
+rmarkdown::render("README.Rmd", output_format = "github_document")
