@@ -62,12 +62,31 @@ usethis::use_github_actions_badge(name = "R-CMD-check.yaml")
 ## --- this will generate the Markdown badge you can commit into README.md ---
 ## -------------------------------------------------------
 
+# ## --- Add a Binder badge for online RStudio
+# ## --- In your repo root, create a file named runtime.txt containing:
+# r-4.2
+#
+# ## --- Open README.md (or create it with usethis::use_readme_md()), and add at the top:
+usethis::use_readme_md()
+# [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nithecs-biomath/R_package_basics/master?urlpath=rstudio)
+#
+# ## --- Also in README.md include:
+# ## Installation
+#
+# ```r
+# # install.packages("devtools")
+# devtools::install_github("nithecs-biomath/R_package_basics")
+# library(R_package_basics)
+# hello("Sandra")
+# ```
+# ## -------------------------------------------------------
 
 ## --- Verify everything
 ## --- Locally:
 devtools::install_github("nithecs-biomath/RBasicPack")
 library(RBasicPack)
 hello("World")
+hello("NITheCS Repo")
 ## -------------------------------------------------------
 
 ## --- On GitHub:
