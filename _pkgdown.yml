@@ -1,0 +1,53 @@
+# _pkgdown.yml
+
+# 1. Where the site will live
+url: https://nithecs-biomath.github.io/RBasicPack
+
+# 2. Site-wide template settings
+template:
+  params:
+    # choose any Bootswatch theme (default is 'default')
+    bootswatch: flatly
+
+# 3. Navbar layout
+navbar:
+  title: RBasicPack
+  left:
+    - text: Home
+      href: index.html
+    - text: Reference
+      href: reference/index.html
+    - text: Articles
+      href: articles/index.html
+  right:
+    - icon: fa-github
+      href: https://github.com/nithecs-biomath/RBasicPack
+
+# 4. Home page (optional—pkgdown will auto‐generate if you omit)
+home:
+  title: "RBasicPack"
+  contents:
+    - text: |
+        **RBasicPack** is a minimal R package demonstrating:
+        - Installation from GitHub
+        - Automatic testing via **testthat**
+        - Continuous integration with GitHub Actions
+        - Cloud‐based demo via Binder
+    - text: "```r\nlibrary(RBasicPack)\nhello()\n```"
+
+# 5. Reference section
+reference:
+  title: "Function reference"
+  contents:
+    - hello
+
+# 6. Articles/vignettes (if you add any `.Rmd` vignettes under `vignettes/`)
+articles:
+  title: "Articles"
+  contents:
+    # - getting-started
+
+# 7. Build options
+# By default pkgdown writes into 'docs/'; you can override:
+# destination: docs
+# devtools::build_vignettes()

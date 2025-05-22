@@ -1,0 +1,50 @@
+---
+title: "Getting started with RBasicPack"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with RBasicPack}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r load}
+library(RBasicPack)
+```
+
+# Installation
+```{r install}
+# install.packages("devtools")
+devtools::install_github("nithecs-biomath/RBasicPack")
+```
+# Usage
+## Load the package and try the key functions:
+
+```{r run}
+library(RBasicPack)
+hello("Vignette")
+```
+
+In `yaml` Feel free to:
+
+- **Change** the `title:` field.
+- **Add** sections (e.g. “Examples”, “Advanced usage”).
+- **Insert** code chunks with plots or tables.
+
+---
+
+### 3. Build the vignette
+
+From R:
+
+```{r build}
+devtools::build_vignettes()
+```
+This will render the HTML under inst/doc/ and update your package metadata so that vignette("getting-started") works.
+

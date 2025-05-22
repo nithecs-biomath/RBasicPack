@@ -105,3 +105,21 @@ hello("NITheCS Repo")
 ## --- When you’re done, you can Knit the document back to GitHub‐flavored Markdown
 ## --- via the Knit button or
 rmarkdown::render("README.Rmd", output_format = "github_document")
+## -------------------------------------------------------
+
+## >> Add a docs/ site with pkgdown:
+usethis::use_pkgdown()
+
+## --- Scaffold the vignette template
+## --- In your R console (or in an R script), run:
+usethis::use_vignette("getting-started")
+devtools::build_vignettes()
+
+## --- Static hosting with pkgdown + GitHub Pages
+## --- If you just want a nicer documentation site (still not executable):
+
+## >> Build site with pkgdown:
+pkgdown::build_site()
+
+## >> Enable GitHub Pages from the docs/ folder.
+## >> Readers browse your functions and vignettes at https://nithecs-biomath.github.io/RBasicPack/.
